@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/ee5b22327f.js" crossorigin="anonymous"></script>
+	
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+	 <aside id="sidebar">
+	 	<input type="checkbox" id="check">
+		<label for="check">
+			<i class="fas fa-bars sticky" id="btn"></i>
+			<i class="fas fa-times" id="cancel"></i>
+		</label>
+
+	 	<header id="avatar">
+	 		<div class="logo"></div>
+	 		<div class="res_name"></div>
+	 	</header>
+	 	<div id="nav">
+	 		<ul>
+				<li><a href="#"><i class="far fa-user-circle fa-lg"></i>Profile</a></li>
+				<li><a href="#"  id="manu_page"><i class="far fa-calendar-minus fa-lg"></i>Menu</a></li>
+				<li><a href="#"><i class="fas fa-comment-dots fa-lg"></i>Contact</a></li>
+				<li><a href="#"><i class="fas fa-tags fa-lg"></i>Voucher</a></li>
+				<li><a href="#"><i class="fas fa-cogs fa-lg"></i>Setting</a></li>
+				<li><a href="#"><i class="fas fa-ellipsis-h fa-lg"></i>About</a></li>
+			</ul>
+	 	</div>
+	 </aside>
+
+	 <main>
+
+	 	<section id="banner">
+	 		<h1>Restaurant</h1>
+			<p>our moto</p>
+
+			<div id="open_cart">
+				<img src="image/icon/cloche.png">
+				<p>3</p>
+			</div>
+
+	 	</section>
+
+	 	<section id="searchbox">
+	 		<div id="search_bar">
+
+				<div class="search_btn">
+					<i class="fas fa-search"></i>
+				</div>
+
+				<input placeholder="What would you like to eat ?" type="text">
+
+				<div class="filter_btn">
+					<i class="fas fa-sliders-h"></i>
+				</div>
+			</div>
+
+			<div id="category-head">
+				<div class="category active" id="all">
+					<object type="image/svg+xml" data="image/icon/all.svg"></object>
+					<p>All</p>
+				</div>
+				<div class="category" id="Noodle">
+					<object type="image/svg+xml" data="image/icon/noodles.svg"></object>
+					<p>Noodle</p>
+				</div>
+				<div class="category" id="Rice">
+					<object type="image/svg+xml" data="image/icon/rice-bowl.svg"></object>
+					<p>Rice</p>
+				</div>
+				<div class="category" id="Soup">
+					<object type="image/svg+xml" data="image/icon/soup.svg"></object>
+					<p>Soup</p>
+				</div>
+				<div class="category" id="Dessert">
+					<object type="image/svg+xml" data="image/icon/ice-cream.svg"></object>
+					<p>Dessert</p>
+				</div>
+			</div>
+	 	</section>
+
+	 	<section id="menu">
+	 		<div class="card"></div>
+	 	</section>
+
+	 	<section id="cart">
+
+	 		<header>My order</header>
+
+	 		<i class="fas fa-chevron-circle-left fa-3x" id="back"></i>
+
+	 		<div id="bill">
+	 			<div class="cart_item"></div>
+	 		</div>
+
+	 		<div id="total">
+	 			<p class="total_text">Total</p>
+				<p class="total_number"><strong>$0</strong></p>
+	 		</div>
+
+	 		<div id="confirm_order">
+	 			<p class="confirm_btn"><strong>Confirm order</strong></p>
+	 		</div>
+
+	 	</section>
+
+	 	<div id="info">
+	 		<div class="information" id="info0">
+
+	 			<i class="fas fa-chevron-circle-left fa-3x info_back"></i>
+				<i class="far fa-heart fa-3x info_heart"></i>
+
+	 			<div class="info_picture"></div>
+	 			<div class="info_name">Wonton noodles soup</div>
+	 			<div class="info_price">
+	 				<p><strong>$0</strong></p>
+					<div class="quantity">
+						<span class="minus">-</span>
+						 <span class="num">01</span>
+						<span class="plus">+</span>
+					</div>
+	 			</div>
+	 			<div class="info_star">
+	 				<i class="fas fa-star fa"></i>
+					<i class="fas fa-star fa"></i>
+					<i class="fas fa-star fa"></i>
+					<i class="fas fa-star fa"></i>
+					<i class="fas fa-star fa5"></i>
+	 			</div>
+	 			<div class="info_des">
+	 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." 
+	 			</div>
+	 			<div class="info_btn">
+	 				<div class="info_add">Add to cart</div>
+	 			</div>
+	 			
+	 		</div>
+	 	</div>
+
+	 	<section id="payment">
+
+	 		<i class="fas fa-chevron-circle-left fa-3x" id="payment_back"></i>
+
+	 		<div id="payment_box">
+	 			<div class="background">
+	 				<div class="first_box"></div>
+	 				<div class="second_box"></div>
+	 				<div class="third_box">
+		 				<p class="payment_text">Total Bill</p>
+		 				<p class="payment_number">$0</p>
+		 			</div>
+
+		 			<p class="choose_text">Choose your payment method</p>
+
+		 			<div class="pay_btn">
+		 				<div id="paypal-button"></div>
+
+		 				<p class="cash">Pay by Cash</p>
+		 			</div>
+	 			</div>
+	 
+	 		</div>
+	 	</section>
+
+	 	<section id="chat">
+	 		
+	 	</section>
+	 </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	
+<script>
+	const confirm = document.getElementsByClassName("confirm_btn")[0]
+	const payment_back = document.getElementById("payment_back")
+	const t = gsap.timeline();
+	t.pause();
+	t.to("#payment", {opacity: 1, y:0, scale:1, duration: .3, pointerEvents: 'auto'});
+	confirm.addEventListener('click',function(){t.play();})
+	payment_back.addEventListener('click',function(){t.reverse();})
+
+	const open = document.querySelectorAll(".card");
+	const close = document.querySelectorAll(".info_back");
+	const t1 = [];
+
+	for(let i = 0; i < open.length; i++){
+		t1[i] = gsap.timeline();
+		t1[i].pause();
+	}
+	for(let i = 0; i < open.length; i++){
+		t1[i].to("#info"+ String(i), {opacity: 1, y:0, scale:1, duration: .3, pointerEvents: 'auto'});
+	}
+
+	for(let i = 0; i < open.length; i++){
+		open[i].addEventListener('click',function(){
+			t1[i].play();
+		})
+		close[i].addEventListener('click',function(){
+			t1[i].reverse();
+		})
+	}
+</script>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+  paypal.Button.render({
+    // Configure environment
+    env: 'sandbox',
+    client: {
+      sandbox: 'ASnEzxQEZ4RhdcE4SZfIrTZsUxiXkvrImjBxV-CUhVBpWA6Lvy7oONQVUzapm84yVe7JwWy7tMJwokWm',
+      production: 'demo_production_client_id'
+    },
+    // Customize button (optional)
+    locale: 'en_US',
+    style: {
+      size: 'small',
+      color: 'gold',
+      shape: 'pill',
+    },
+    // Enable Pay Now checkout flow (optional)
+    commit: true,
+    // Set up a payment
+    payment: function(data, actions) {
+      return actions.payment.create({
+        transactions: [{
+          amount: {
+            total: /*<?php echo (round($_SESSION['sum']*0.000044, 2)); ?>,*/ "1",
+            currency: "USD",
+          }
+        }]
+      });
+    },
+    // Execute the payment
+    onAuthorize: function(data, actions) {
+      return actions.payment.execute().then(function() {
+        // Show a confirmation message to the buyer
+        // Update client
+        // Insert vô db:
+        
+      	});
+    }
+  }, '#paypal-button');
+
+</script>
+
+</body>
+
+
+
+
+
+
